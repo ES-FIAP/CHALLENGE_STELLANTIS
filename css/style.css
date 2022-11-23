@@ -615,7 +615,18 @@ a:focus {
 /* contact section */
 /* info section */
 .info_section {
-  background: linear-gradient(138.06deg, #6b83db 3.32%, #152767 103.08%);
+  background: #232526; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #414345,
+    #232526
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #414345,
+    #232526
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   color: #ffffff;
   text-align: center;
   width: 100%;
@@ -760,6 +771,14 @@ a:focus {
   font-size: 4vw;
 }
 
+#differences {
+  align-self: center;
+  align-items: center;
+  padding: 20% auto 20% auto;
+  text-align: center;
+  margin: auto 20%;
+}
+
 #differences .row {
   gap: 2vh;
 }
@@ -800,6 +819,7 @@ a:focus {
   flex-direction: column;
   gap: 12px;
   padding-top: 2%;
+  text-align: left;
 }
 
 #differences > .row > .column > .item h4 {
@@ -816,7 +836,7 @@ a:focus {
   font-weight: 400;
   font-size: 1vw;
   line-height: 18px;
-
+  letter-spacing: 1px;
   color: #828282;
 }
 
